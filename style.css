@@ -2,7 +2,7 @@
   /* === Colors === */
   --color-primary: #0033a0; /* Deep blue for header/nav */
   --color-primary-light: #0066cc; /* Lighter blue for buttons */
-  --color-accent: #e6f0fa; /* Soft blue background highlight */
+  --color-accent: #f2f8fd; /* Softer, lighter blue background highlight */
   --color-bg: #f9f9f9; /* Page background */
   --color-card-bg: #ffffff; /* Card background */
   --color-border: #e0e0e0; /* Light gray for borders */
@@ -133,7 +133,8 @@ main .container aside {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: var(--color-accent);
+  background-color: var(--color-bg);
+  /*  */
   width: 13%;
   height: 100vh;
   padding: 20px;
@@ -169,7 +170,7 @@ main section {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  background-color: var(--color-bg);
+  background-color: var(--color-accent);
   width: 87%;
   height: 100%;
 }
@@ -232,7 +233,7 @@ main section .range-solutions .container .solution {
   background-color: var(--color-card-bg);
   border: 1px solid var(--color-border);
   border-radius: 10px;
-  width: 250px;
+  width: 230px;
   height: 330px;
   display: flex;
   flex-direction: column;
@@ -245,6 +246,10 @@ main section .range-solutions .container .solution img {
   width: 100%;
   height: 120px;
   object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 main section .range-solutions .container .solution h4 {
@@ -263,5 +268,353 @@ main section .range-solutions .container .solution a {
   padding-left: 10px;
   border-radius: 5px;
   width: fit-content;
-  /* padding-top: 30px; */
+  margin-top: 30px;
+}
+
+main section .featured-solution {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 10px;
+  padding-top: 30px;
+  width: 100%;
+}
+
+main section .featured-solution h2 {
+  font-size: 1.6em;
+  margin-bottom: 20px;
+}
+main section .featured-solution h3 {
+  font-size: 1.2em;
+  color: var(--color-muted-text);
+  font-weight: 300;
+}
+
+main section .featured-solution .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+}
+
+main section .featured-solution .container .grassn {
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  width: 50%;
+  height: 280px;
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  gap: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main section .featured-solution .container .grassn img {
+  width: 200px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+main section .featured-solution .container .grassn .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+main section .featured-solution .container .grassn .text-container h2 {
+  font-size: 1.4em;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+main section .featured-solution .container .grassn .text-container h4 {
+  font-size: 1em;
+  font-weight: 500;
+  color: var(--color-muted-text);
+}
+
+main section .featured-solution .container .grassn .text-container p {
+  font-size: 1em;
+  color: var(--color-muted-text);
+}
+
+main
+  section
+  .featured-solution
+  .container
+  .grassn
+  .text-container
+  .keywords-holder {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: row;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+main
+  section
+  .featured-solution
+  .container
+  .grassn
+  .text-container
+  .keywords-holder
+  .keywords-container {
+  width: auto;
+  padding: 4px 12px;
+  border-radius: 20px;
+  border: 1px solid var(--color-muted-text);
+  font-size: 0.95em;
+  color: var(--color-muted-text);
+}
+
+main
+  section
+  .featured-solution
+  .container
+  .grassn
+  .text-container
+  .link-holder {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 10px;
+
+  border-top: 1px solid var(--color-border);
+  padding-top: 50px;
+}
+
+main
+  section
+  .featured-solution
+  .container
+  .grassn
+  .text-container
+  .link-holder
+  a {
+  text-decoration: none;
+  color: var(--color-link);
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+main section .featured-solution .container .grassn-request {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: start;
+  background-color: var(--color-card-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 10px;
+  gap: 10px;
+  padding: 10px;
+  width: 30%;
+  height: 280px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+main section .featured-solution .container .grassn-request .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+main section .featured-solution .container .grassn-request .container img {
+  width: 150px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+main
+  section
+  .featured-solution
+  .container
+  .grassn-request
+  .container
+  .text-holder {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 10px;
+}
+
+main
+  section
+  .featured-solution
+  .container
+  .grassn-request
+  .container
+  .text-holder
+  h2 {
+  font-size: 1.4em;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+main
+  section
+  .featured-solution
+  .container
+  .grassn-request
+  .container
+  .text-holder
+  p {
+  font-size: 1em;
+  color: var(--color-muted-text);
+  letter-spacing: 1px;
+}
+
+main section .featured-solution .container .grassn-request a {
+  text-decoration: none;
+  color: var(--color-link);
+  font-weight: 500;
+  padding: 10px;
+  margin-top: 60px;
+}
+
+/* Responsive styles  */
+@media (max-width: 1024px) {
+  main .container {
+    flex-direction: column;
+  }
+  main .container aside {
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    padding: 10px;
+  }
+  main .container aside nav {
+    flex-direction: row;
+    gap: 15px;
+    width: 100%;
+    justify-content: center;
+  }
+  main section {
+    width: 100%;
+  }
+  main section .featured-solution .container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+  main section .featured-solution .container .grassn,
+  main section .featured-solution .container .grassn-request {
+    width: 90%;
+    height: auto;
+    min-width: 0;
+    max-width: 700px;
+  }
+}
+
+@media (max-width: 768px) {
+  header nav {
+    flex-direction: column;
+    gap: 15px;
+  }
+  main .container aside nav a {
+    font-size: 1em;
+    padding: 8px;
+  }
+  main section .range-solutions {
+    padding: 20px;
+  }
+  main section .range-solutions .container {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  main section .range-solutions .container .solution {
+    width: 90%;
+    max-width: 350px;
+    height: auto;
+  }
+  main section .hero {
+    height: 180px;
+    padding: 10px;
+  }
+  main section .featured-solution .container .grassn,
+  main section .featured-solution .container .grassn-request {
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    align-items: flex-start;
+  }
+  main section .featured-solution .container .grassn img,
+  main section .featured-solution .container .grassn-request .container img {
+    width: 100%;
+    height: 120px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+  }
+  main section .featured-solution .container .grassn .text-container,
+  main
+    section
+    .featured-solution
+    .container
+    .grassn-request
+    .container
+    .text-holder {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+  header nav .menu {
+    gap: 10px;
+  }
+  main .container aside {
+    padding: 5px;
+  }
+  main section .range-solutions {
+    padding: 10px;
+  }
+  main section .range-solutions .container .solution {
+    width: 100%;
+    max-width: 100%;
+  }
+  main section .range-solutions .container a {
+    margin-bottom: 10px;
+  }
+  main section .hero h1 {
+    font-size: 1.2em;
+  }
+  main section .featured-solution .container .grassn,
+  main section .featured-solution .container .grassn-request {
+    width: 100%;
+    max-width: 100%;
+    padding: 5px;
+  }
+  main section .featured-solution .container .grassn img,
+  main section .featured-solution .container .grassn-request .container img {
+    width: 100%;
+    height: 90px;
+  }
+  main section .featured-solution .container .grassn .text-container,
+  main
+    section
+    .featured-solution
+    .container
+    .grassn-request
+    .container
+    .text-holder {
+    padding: 5px 0;
+  }
 }
