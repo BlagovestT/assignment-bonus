@@ -1,208 +1,359 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>Aray</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-  <title>Aray</title>
-</head>
-
-<body>
-  <header>
-    <nav>
-      <div class="logo"><i class="fa-solid fa-tractor"></i>
-        <h2>Aray</h2>
-      </div>
-
-      </div>
-      <div class="menu">
-        <select>
-          <button>
-            <selectedcontent></selectedcontent>
-          </button>
-          <option>
-            <i class="fa-solid fa-house-user"></i> Farm Oregon
-          </option>
-          <option>
-            <i class="fa-solid fa-house-user"></i> Farm Nepal
-          </option>
-          <option>
-            <i class="fa-solid fa-house-user"></i> Farm Texas
-          </option>
-          <option>
-            <i class="fa-solid fa-house-user"></i> Farm Apple
-          </option>
-        </select>
-        <div class="icons-container">
-          <i class="fa-regular fa-circle-question"></i>
-          <i class="fa-regular fa-circle-user"></i>
-          <i class="fa-solid fa-ellipsis-vertical"></i>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <div class="container">
-      <aside>
-        <nav>
-          <a href="#section1">
-            <i class="fa-solid fa-house-user"></i> Home
-          </a>
-          <a href="#section2">
-            <i class="fa-solid fa-calendar"></i> Events
-          </a>
-          <a href="#section3">
-            <i class="fa-solid fa-newspaper"></i> News
-          </a>
-          <a href="#section4">
-            <i class="fa-solid fa-microphone"></i> Talk to us
-          </a>
+  <body>
+    <div class="page-frame">
+      <header class="header">
+        <nav class="header__nav">
+          <div class="header__logo">
+            <i class="fa-solid fa-tractor"></i>
+            <h2>Aray</h2>
+          </div>
+          <div class="header__menu">
+            <select class="header__select">
+              <button>
+                <selectedcontent></selectedcontent>
+              </button>
+              <option class="header__option">
+                <i class="fa-solid fa-house-user"></i> Farm Oregon
+              </option>
+              <option class="header__option">
+                <i class="fa-solid fa-house-user"></i> Farm Nepal
+              </option>
+              <option class="header__option">
+                <i class="fa-solid fa-house-user"></i> Farm Texas
+              </option>
+              <option class="header__option">
+                <i class="fa-solid fa-house-user"></i> Farm Apple
+              </option>
+            </select>
+            <div class="header__icons">
+              <i class="fa-regular fa-circle-question"></i>
+              <i class="fa-regular fa-circle-user"></i>
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </div>
+          </div>
         </nav>
-      </aside>
-      <section>
-        <div class="hero" id="section1">
-          <h1>Welcome to Aray</h1>
-          <p>
-            Access all our solutions, products and knowledge in one place to
-            enhance your crop nutrition decisions.
-          </p>
-        </div>
-        <div class="range-solutions">
-          <h3>ARAY SOLUTIONS</h3>
-          <h2>Access our full range of solutions</h2>
-          <div class="container">
-            <div class="solution">
-              <img src="assets/solution1.jpg" alt="Solution 1" />
-              <h4>Optimize</h4>
-              <p>Optimize your crop nutrition with our advanced solutions.</p>
-              <a href="#" target="_blank">Optimize your crop</a>
+      </header>
+
+      <main class="main">
+        <div class="main__container">
+          <aside class="sidebar">
+            <nav class="sidebar__nav">
+              <a href="#section1" class="sidebar__link">
+                <i class="fa-solid fa-house-user"></i> Home
+              </a>
+              <a href="#section2" class="sidebar__link">
+                <i class="fa-solid fa-calendar"></i> Events
+              </a>
+              <a href="#section3" class="sidebar__link">
+                <i class="fa-solid fa-newspaper"></i> News
+              </a>
+              <a href="#section4" class="sidebar__link">
+                <i class="fa-solid fa-microphone"></i> Talk to us
+              </a>
+            </nav>
+            <div class="sidebar__footer">
+              <i class="fa-solid fa-repeat"></i> <a href="">Restart the tour</a>
             </div>
-            <div class="solution">
-              <img src="assets/solution2.jpg" alt="Solution 2" />
-              <h4>Enhance</h4>
-              <p>Enhance your yield with our innovative products.</p>
-              <a href="#" target="_blank">Enhance your yield</a>
-            </div>
-            <div class="solution">
-              <img src="assets/solution3.jpg" alt="Solution 3" />
-              <h4>Expert advice</h4>
-              <p>Get expert advice and support for your farming needs.</p>
-              <a href="#" target="_blank">Get expert advice</a>
-            </div>
-            <div class="solution">
-              <img src="assets/solution4.jpg" alt="Solution 4" />
-              <h4>Smart Monitoring</h4>
-              <p>
-                Monitor your crops in real-time with our smart technology
-                tools.
+          </aside>
+
+          <section class="content">
+            <div class="hero" id="section1">
+              <h1 class="hero__title">Welcome to Aray</h1>
+              <p class="hero__description">
+                Access all our solutions, products and knowledge in one place to
+                enhance your crop nutrition decisions.
               </p>
-              <a href="#" target="_blank">Start monitoring</a>
             </div>
-            <div class="solution">
-              <img src="assets/solution5.jpg" alt="Solution 5" />
-              <h4>Sustainable Growth</h4>
-              <p>
-                Adopt sustainable practices for long-term farm productivity.
-              </p>
-              <a href="#" target="_blank">Learn sustainability</a>
-            </div>
-          </div>
-          <div class="featured-solution">
-            <h3>FEATURED SOLUTIONS</h3>
-            <h2>Optimize your grassland</h2>
-            <div class="container">
-              <div class="grassn">
-                <img src="assets/grassn-img.jpg" alt="GrassN" />
-                <div class="text-container">
-                  <h2><b>GrassN</b> Aray grassN</h2>
-                  <h4>Optimal greenland management</h4>
-                  <p>Discover how GrassN helps you plan</p>
-                  <div class="keywords-holder">
-                    <div class="keywords-container">
-                      <p>Greenland</p>
-                    </div>
-                    <div class="keywords-container">
-                      <p>Management Solution</p>
-                    </div>
-                    <div class="keywords-container">
-                      <p>Aray</p>
+
+            <div class="solutions">
+              <h3 class="solutions__subtitle">ARAY SOLUTIONS</h3>
+              <h2 class="solutions__title">
+                Access our full range of solutions
+              </h2>
+              <div class="solutions__container">
+                <div class="card">
+                  <img
+                    src="assets/solution1.jpg"
+                    alt="Solution 1"
+                    class="card__image"
+                  />
+                  <h4 class="card__title">Optimize</h4>
+                  <p class="card__description">
+                    Optimize your crop nutrition with our advanced solutions.
+                  </p>
+                  <a href="#" target="_blank" class="card__link"
+                    >Optimize your crop</a
+                  >
+                </div>
+                <div class="card">
+                  <img
+                    src="assets/solution2.jpg"
+                    alt="Solution 2"
+                    class="card__image"
+                  />
+                  <h4 class="card__title">Enhance</h4>
+                  <p class="card__description">
+                    Enhance your yield with our innovative products.
+                  </p>
+                  <a href="#" target="_blank" class="card__link"
+                    >Enhance your yield</a
+                  >
+                </div>
+                <div class="card">
+                  <img
+                    src="assets/solution3.jpg"
+                    alt="Solution 3"
+                    class="card__image"
+                  />
+                  <h4 class="card__title">Expert advice</h4>
+                  <p class="card__description">
+                    Get expert advice and support for your farming needs.
+                  </p>
+                  <a href="#" target="_blank" class="card__link"
+                    >Get expert advice</a
+                  >
+                </div>
+                <div class="card">
+                  <img
+                    src="assets/solution4.jpg"
+                    alt="Solution 4"
+                    class="card__image"
+                  />
+                  <h4 class="card__title">Smart Monitoring</h4>
+                  <p class="card__description">
+                    Monitor your crops in real-time with our smart technology
+                    tools.
+                  </p>
+                  <a href="#" target="_blank" class="card__link"
+                    >Start monitoring</a
+                  >
+                </div>
+                <div class="card">
+                  <img
+                    src="assets/solution5.jpg"
+                    alt="Solution 5"
+                    class="card__image"
+                  />
+                  <h4 class="card__title">Sustainable Growth</h4>
+                  <p class="card__description">
+                    Adopt sustainable practices for long-term farm productivity.
+                  </p>
+                  <a href="#" target="_blank" class="card__link"
+                    >Learn sustainability</a
+                  >
+                </div>
+              </div>
+
+              <div class="featured">
+                <h3 class="featured__subtitle">FEATURED SOLUTIONS</h3>
+                <h2 class="featured__title">Optimize your grassland</h2>
+                <div class="featured__container">
+                  <div class="featured__main">
+                    <img
+                      src="assets/grassn-img.jpg"
+                      alt="GrassN"
+                      class="featured__image"
+                    />
+                    <div class="featured__content">
+                      <h2 class="featured__heading">
+                        <b>GrassN</b> Aray grassN
+                      </h2>
+                      <h4 class="featured__subheading">
+                        Optimal greenland management
+                      </h4>
+                      <p class="featured__text">
+                        Discover how GrassN helps you plan
+                      </p>
+                      <div class="featured__tags">
+                        <div class="tag"><p>Greenland</p></div>
+                        <div class="tag"><p>Management Solution</p></div>
+                        <div class="tag"><p>Aray</p></div>
+                      </div>
+                      <div class="featured__link-holder">
+                        <a href="#" class="featured__link">Discover</a>
+                      </div>
                     </div>
                   </div>
-                  <div class="link-holder">
-                    <a href="#">Discover</a>
+                  <div class="featured__quote">
+                    <div class="featured__quote-container">
+                      <div class="featured__quote-text">
+                        <h2 class="featured__quote-title">Request a quote</h2>
+                        <p class="featured__quote-description">
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Sequi mollitia porro
+                        </p>
+                      </div>
+                      <img
+                        src="assets/grassn-request.jpg"
+                        alt=""
+                        class="featured__quote-image"
+                      />
+                    </div>
+                    <a href="#" class="featured__quote-link">Request a quote</a>
                   </div>
                 </div>
               </div>
-              <div class="grassn-request">
-                <div class="container">
-                  <div class="text-holder">
-                    <h2>Request a quote</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Sequi mollitia porro
-                    </p>
+
+              <div class="content-sections" id="section2">
+                <div class="events">
+                  <div class="section-header">
+                    <h2 class="section-header__title">Events</h2>
+                    <button class="button">See all events</button>
                   </div>
-
-                  <img src="assets/grassn-request.jpg" alt="" />
+                  <div class="events__container">
+                    <div class="content-card">
+                      <img
+                        src="assets/events1.jpg"
+                        alt="Oregon Event"
+                        class="content-card__image"
+                      />
+                      <h2 class="content-card__title">New event in Oregon</h2>
+                      <p class="content-card__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Delectus, aspernatur? Odio quia cupiditate
+                        voluptas commodi
+                      </p>
+                      <a href="#" class="content-card__link">Read more</a>
+                    </div>
+                    <div class="content-card">
+                      <img
+                        src="assets/event2.jpg"
+                        alt="New Research"
+                        class="content-card__image"
+                      />
+                      <h2 class="content-card__title">Brand new research</h2>
+                      <p class="content-card__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Delectus, aspernatur? Odio quia cupiditate
+                        voluptas commodi
+                      </p>
+                      <a href="#" class="content-card__link">Read more</a>
+                    </div>
+                  </div>
                 </div>
 
-                <a href="#">Request a quote</a>
+                <div class="podcast">
+                  <div class="section-header">
+                    <h2 class="section-header__title">Podcast</h2>
+                    <button class="button">See all podcasts</button>
+                  </div>
+                  <div class="podcast__container">
+                    <div class="podcast-card">
+                      <img
+                        src="assets/podcast1.jpg"
+                        alt="Podcast"
+                        class="podcast-card__image"
+                      />
+                      <h2 class="podcast-card__title">
+                        New podcast episode: Farming in the 21st century
+                      </h2>
+                      <p class="podcast-card__description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Doloribus, cumque.
+                      </p>
+                      <a href="#" class="podcast-card__link">Listen</a>
+                    </div>
+                    <div class="podcast-card">
+                      <h2 class="podcast-card__title">
+                        Expert insights on sustainable farming practices
+                      </h2>
+                      <p class="podcast-card__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Delectus, aspernatur? Odio quia cupiditate
+                        voluptas commodi
+                      </p>
+                      <a href="#" class="podcast-card__link">Listen</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="content-sections" id="section3">
+                <div class="news">
+                  <div class="section-header">
+                    <h2 class="section-header__title">News</h2>
+                    <button class="button">See all news</button>
+                  </div>
+                  <div class="news__container">
+                    <div class="content-card content-card--news">
+                      <img
+                        src="assets/newsimg1.jpg"
+                        alt="Potato Research"
+                        class="content-card__image"
+                      />
+                      <p class="content-card__category">Potatoes</p>
+                      <h2 class="content-card__title">Potato new research</h2>
+                      <p class="content-card__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Delectus, aspernatur? Odio quia cupiditate
+                        voluptas commodi
+                      </p>
+                      <a href="#" class="content-card__link">Read more</a>
+                    </div>
+                    <div class="content-card">
+                      <img
+                        src="assets/newsimg2.jpg"
+                        alt="Weather News"
+                        class="content-card__image"
+                      />
+                      <p class="content-card__category">Weather</p>
+                      <h2 class="content-card__title">No rain foreseen</h2>
+                      <p class="content-card__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Delectus, aspernatur? Odio quia cupiditate
+                        voluptas commodi
+                      </p>
+                      <a href="#" class="content-card__link">Read more</a>
+                    </div>
+                    <div class="content-card">
+                      <img
+                        src="assets/newsimg3.jpg"
+                        alt="Wheat Harvest"
+                        class="content-card__image"
+                      />
+                      <p class="content-card__category">Wheat</p>
+                      <h2 class="content-card__title">This year's harvest</h2>
+                      <p class="content-card__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Delectus, aspernatur? Odio quia cupiditate
+                        voluptas commodi
+                      </p>
+                      <a href="#" class="content-card__link">Read more</a>
+                    </div>
+                    <div class="content-card">
+                      <img
+                        src="assets/newsimg4.jpg"
+                        alt="Animal Welfare"
+                        class="content-card__image"
+                      />
+                      <p class="content-card__category">Animals</p>
+                      <h2 class="content-card__title">Cow's are happier</h2>
+                      <p class="content-card__description">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing
+                        elit. Delectus, aspernatur? Odio quia cupiditate
+                        voluptas commodi
+                      </p>
+                      <a href="#" class="content-card__link">Read more</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div class="events-podcast">
-            <div class="events">
-              <div class="upper-bar">
-                <h2>Events</h2>
-                <button>See all events</button>
-              </div>
-              <div class="event-container">
-                <div class="event">
-                  <img src="assets/events1.jpg" alt="Oregon Event">
-                  <h2>New event in Oregon</h2>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, aspernatur? Odio quia
-                    cupiditate voluptas commodi</p>
-                  <a href="#">Read more</a>
-                </div>
-                <div class="event">
-                  <img src="assets/event2.jpg" alt="New Research">
-                  <h2>Brand new research </h2>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, aspernatur? Odio quia
-                    cupiditate voluptas commodi</p>
-                  <a href="#">Read more</a>
-                </div>
-              </div>
-
-            </div>
-
-            <div class="podcast">
-              <div class="upper-bar">
-                <h2>Podcast</h2>
-                <button>See all podcasts</button>
-              </div>
-              <div class="podcast-container">
-                <div class="podcast-item">
-                  <img src="assets/podcast1.jpg" alt="Podcast">
-                  <h2>New podcast episode: Farming in the 21st century</h2>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, cumque.</p>
-                  <a href="#">Listen</a>
-                </div>
-                <div class="podcast-item">
-                  <h2>Expert insights on sustainable farming practices</h2>
-                  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, aspernatur? Odio quia
-                    cupiditate voluptas commodi</p>
-                  <a href="#">Listen</a>
-                </div>
-              </div>
-            </div>
-          </div>
+          </section>
         </div>
-      </section>
+      </main>
     </div>
-  </main>
-</body>
-
+  </body>
 </html>
